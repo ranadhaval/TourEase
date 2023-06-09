@@ -2,7 +2,7 @@
  
  
   
-<p align="center">  https://github.com/ranadhaval/TourEase/assets/76704939/83aa1d73-7543-44b5-b3da-3cbbff68b0ff   </p>
+https://github.com/ranadhaval/TourEase/assets/76704939/83aa1d73-7543-44b5-b3da-3cbbff68b0ff
 
 
 Tour Ease is a cutting-edge mobile application designed to enhance your travel experience and provide you with a seamless and personalized journey. With its extensive range of features, Tour Ease revolutionizes the way you plan, explore, and connect during your trips.
