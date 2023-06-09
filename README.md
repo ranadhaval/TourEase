@@ -21,12 +21,10 @@
   
   <h2>Contributing</h2>
   <p>Contributions to Tour Ease are welcome! If you have any bug fixes, enhancements, or new features to propose, please submit a pull request. Make sure to follow the coding guidelines and provide clear commit messages.</p>
-  
-  <h2>License</h2>
-  <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
+
   
   <h2>Contact</h2>
-  <p>For any inquiries or feedback, please contact the project maintainer: your-email@example.com</p>
+  <p>For any inquiries or feedback, please contact the project maintainer: rd755937@gmail.com</p>
 </body>
 </html>
  
