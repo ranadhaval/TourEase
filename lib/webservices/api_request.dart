@@ -9,14 +9,6 @@ import 'package:tourease/util/_string.dart';
 import 'package:tourease/util/constants.dart';
 import 'package:tourease/webservices/base_response.dart';
 import 'package:tourease/webservices/response_model.dart';
-
-
-
-
-
-
-
-
 class ApiRequest {
   String url;
 
