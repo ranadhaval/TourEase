@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:tourease/pages/Dashboard/home_controller.dart';
 import 'package:tourease/theme/app_theme.dart';
@@ -11,7 +10,6 @@ import 'package:tourease/widgets/Custombutton.dart';
 import 'package:tourease/widgets/_appbar.dart';
 import 'package:tourease/widgets/custom_text.dart';
 import 'package:tourease/widgets/no_appbar.dart';
-
 import 'profile_controller.dart';
 
 class Profile extends StatefulWidget {
@@ -29,7 +27,6 @@ class _ProfileState extends State<Profile> {
   @override
   void initState() {
     homeController = widget.homeController;
-    // TODO: implement initState
     super.initState();
   }
 
@@ -59,18 +56,20 @@ class _ProfileState extends State<Profile> {
                       ? Constant.editProfileBodyLeftPadding
                       : Constant.profileBodyLeftRightBottomPadding,
                   bottom: Constant.profileBodyLeftRightBottomPadding),
-              child: Builder(builder: (context) {
-                switch (profileController.index_) {
-                  case 1:
-                    return _accountBody();
-                  case 2:
-                    return _profileBody();
-                  case 3:
-                    return _editProfileBody();
-                  default:
-                    return _accountBody();
-                }
-              })),
+              child: SingleChildScrollView(
+                child: Builder(builder: (context) {
+                  switch (profileController.index_) {
+                    case 1:
+                      return _accountBody();
+                    case 2:
+                      return _profileBody();
+                    case 3:
+                      return _editProfileBody();
+                    default:
+                      return _accountBody();
+                  }
+                }),
+              )),
         );
       },
     );
@@ -255,10 +254,10 @@ class _ProfileState extends State<Profile> {
               height: height! * Constant.editProfileBodyCircleHeight,
               width: width! / Constant.editProfileBodyCircleWidth,
               child: Stack(
-                children: const [
+                children: [
                   CircleAvatar(
-                    radius: Constant.editProfileBodyCircleRadius,
-                    child: Image(
+                    radius: height! * Constant.editProfileBodyCircleRadius,
+                    child: const Image(
                         image: AssetImage(
                       imageUser,
                     )),
@@ -266,9 +265,9 @@ class _ProfileState extends State<Profile> {
                   Padding(
                     padding: EdgeInsets.only(
                       bottom: Constant.editCircleBottomPaadding,
-                      right: Constant.editCircleTopPadding,
+                      right: width! * Constant.editCircleRightPadding,
                     ),
-                    child: Align(
+                    child: const Align(
                       alignment: Alignment.bottomRight,
                       child: CircleAvatar(
                         radius: Constant.editCircleRadius,

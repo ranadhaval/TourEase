@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:tourease/pages/Dashboard/home_controller.dart';
 import 'package:tourease/pages/Plan/plan_controller.dart';
+import 'package:tourease/routes/app_routes.dart';
 import 'package:tourease/theme/app_theme.dart';
 import 'package:tourease/util/_string.dart';
 import 'package:tourease/util/constants.dart';
@@ -52,6 +53,10 @@ class _PlanState extends State<Plan> with SingleTickerProviderStateMixin {
           child: Column(
             children: [
               CustomAppBar(
+                  onTap: () {
+                      homeController.index = Constant.INT_ONE;
+            homeController.update();
+                  },
                   title: Strings.plans,
                   space: Constant.SIZE50,
                   leftPadding: Constant.planAppbarLeftPadding,

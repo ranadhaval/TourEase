@@ -126,9 +126,8 @@ class Constant {
   static const double skip2LeftPadding = 37;
   static const double skip2RightPadding = 37;
   static const double skip2TopPadding = 100;
-  static const double skip2Height = 2.7;
-  static const double skip2CircleWidth = 2;
-  static const double skip2CircleRadius = 150;
+
+  static const double skip2CircleRadius = 0.22;
   static const double skip2TextHeight = 1.5;
   static const double skip2TitleSize = 30;
   static const double skip2TitleDiscriptionPadding = 10;
@@ -328,7 +327,9 @@ class Constant {
   static const double detailSecondHeadingTopPadding = 7;
 
   static const double detailMapCircleRadius = 50;
-  static const double detailMapCircleContentPadding = 12;
+  static const double detailMapCircleContentPadding = 10;
+  static const double detailMapCircleContentTopPadding = 8;
+
   static const double detailMapCircleSize = 15;
   static const double detailMapTitleLeftPadding = 20;
   static const double detailMapTitleBottomPadding = 5;
@@ -426,7 +427,7 @@ class Constant {
   static const double profileTileTitleBottomPadding = 10;
   static const double profileTileTitleSize = 12;
   static const double profileSubTileTitleSize = 10;
-  static const double editButtonTopPadding = 30;
+  static const double editButtonTopPadding = 20;
 
   // Edit profile Page
   static const double editProfileBodyRightPadding = 30;
@@ -440,9 +441,9 @@ class Constant {
   static const double editProfileCircleBottomPadding = 35;
   static const double editProfileBodyCircleHeight = 0.125;
   static const double editProfileBodyCircleWidth = 3;
-  static const double editProfileBodyCircleRadius = 50;
+  static const double editProfileBodyCircleRadius = 45;
   static const double editCircleBottomPaadding = 5;
-  static const double editCircleTopPadding = 17;
+  static const double editCircleRightPadding = 0.04;
   static const double editCircleRadius = 15;
   static const double saveButtonPadding = 30;
   static const double spacePaddingBtwMaleAndBod = 10;
@@ -540,7 +541,11 @@ class Constant {
   static const double paymentCardHeight = 0.27;
   static const double addNewCardRightPadding = 7;
   static const double addNewCardSize = 14;
-  static const double addNewCardTitleSpaceRightPadding = 7;
+  static const double addNewCardTitleSpaceBetwwen = 8;
+
+  static const double addNewCardTitleSpaceRightPadding = 0.05;
+  static const double addNewCardTitleSpaceTopPadding = 10;
+
   static const double addNewCardPointerIconSize = 16;
   static const double payButtonBottomPadding = 50;
   static const double priceTileLeftPadding = 30;

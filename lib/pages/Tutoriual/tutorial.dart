@@ -158,17 +158,16 @@ class _TutorialState extends State<Tutorial> {
               left: Constant.skip2LeftPadding,
               right: Constant.skip2RightPadding,
               top: Constant.skip2TopPadding),
-          child: Container(
-            height: MediaQuery.of(context).size.height / Constant.skip2Height,
-            decoration: BoxDecoration(
-                color: AppTheme.colorWhite,
-                border: Border.all(
-                    color: AppTheme.colorWhite,
-                    width: Constant.skip2CircleWidth),
-                borderRadius: BorderRadius.circular(Constant.skip2CircleRadius),
-                image: DecorationImage(
-                  image: AssetImage(image),
-                )),
+          child: CircleAvatar(
+            radius: height * Constant.skip2CircleRadius,
+            backgroundColor: AppTheme.colorWhite,
+            child: Padding(
+              padding: const EdgeInsets.all(Constant.FIVE),
+              child: CircleAvatar(
+                radius: height * Constant.skip2CircleRadius,
+                backgroundImage: AssetImage(image),
+              ),
+            ),
           ),
         ),
         CustomText(
