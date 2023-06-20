@@ -59,30 +59,41 @@ class _PaymentPage2State extends State<PaymentPage2> {
                         fontSize: Constant.payment2TitleSize,
                         fontWight: FontWeight.w500,
                       ),
-                      SvgPicture.asset(
-                        cardExample,
-                        height: height * Constant.paymentCardHeight,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            right: Constant.addNewCardRightPadding),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
+                      Container(
+                        width: width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            CustomText(
-                              title: Strings.addNewCard,
-                              fontfamily: Strings.emptyString,
-                              fontSize: Constant.addNewCardSize,
-                              fontWight: FontWeight.w400,
-                              rightPadding:
-                                  Constant.addNewCardTitleSpaceRightPadding,
-                            ),
                             SvgPicture.asset(
-                              addNewCardPointer,
-                              height: Constant.addNewCardPointerIconSize,
-                              width: Constant.addNewCardPointerIconSize,
-                              color: AppTheme.colorblack,
-                            )
+                              cardExample,
+                              height: height * Constant.paymentCardHeight,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  right: height *
+                                      Constant.addNewCardTitleSpaceRightPadding,
+                                  top: Constant.addNewCardTitleSpaceTopPadding),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  CustomText(
+                                    title: Strings.addNewCard,
+                                    fontfamily: Strings.emptyString,
+                                    fontSize: Constant.addNewCardSize,
+                                    fontWight: FontWeight.w400,
+                                    rightPadding:
+                                        Constant.addNewCardTitleSpaceBetwwen,
+                                  ),
+                                  SvgPicture.asset(
+                                    addNewCardPointer,
+                                    height: Constant.addNewCardPointerIconSize,
+                                    width: Constant.addNewCardPointerIconSize,
+                                    color: AppTheme.colorblack,
+                                  )
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),

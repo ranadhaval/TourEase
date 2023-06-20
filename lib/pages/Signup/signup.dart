@@ -45,6 +45,9 @@ class _SignUpState extends State<SignUp> {
                       CustomAppBar(
                           title: Strings.createAccount,
                           space: Constant.SIZE50,
+                          onTap: () {
+                            Get.back();
+                          },
                           leftPadding: Constant.signUpeAppbarLeftPadding,
                           rightPadding: Constant.signUpeAppbarRightPadding,
                           bottomPadding: Constant.signUpeAppbarBottomPadding),
