@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:tourease/theme/app_theme.dart';
 import 'package:tourease/util/_string.dart';
 import 'package:tourease/util/resources.dart';
 import 'package:tourease/widgets/custom_text.dart';
